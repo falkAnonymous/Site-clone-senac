@@ -1,0 +1,15 @@
+.li-menu{
+    list-style: none;
+}
+li a{
+    color: green;
+    font-size: 25px;
+}
+.a-menu{
+    text-decoration: none;
+    color: white;
+}
+.a-menu:hover{
+    text-decoration: none;
+    color: red;
+}
