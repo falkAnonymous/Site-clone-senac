@@ -1,15 +1,46 @@
-.li-menu{
+.li-menu {
     list-style: none;
 }
-li a{
+
+li a {
     color: green;
     font-size: 25px;
 }
-.a-menu{
+
+.a-menu {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right:10px ;
+    border-right: solid 1px white;
     text-decoration: none;
     color: white;
 }
-.a-menu:hover{
+
+.a-menu:hover {
     text-decoration: none;
     color: red;
+}
+
+.form-control {
+    width: 500px;
+}
+
+table {
+    border: solid 5px rgb(58, 65, 52);
+    text-align: center;
+}
+
+tr,
+th {
+    border: solid 2px rgb(58, 65, 52);
+}
+
+td.inverted-text {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    white-space: nowrap;
+}
+td{
+    padding: 2px;
+    border: solid 1px rgb(58, 65, 52);
 }
