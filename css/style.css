@@ -48,3 +48,9 @@ td{
     padding: 2px;
     border: solid 1px rgb(58, 65, 52);
 }
+/*---------------------------*/
+/*Formulario*/
+.form1{
+    width: 50%;
+    margin-left: 5%;
+}
