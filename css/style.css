@@ -54,3 +54,10 @@ td{
     width: 50%;
     margin-left: 5%;
 }
+select{
+    width: 50%;
+}
+#id{
+    width: 500px;
+    height: 250px;
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/mapagoogle.js"></script>
     <title>Cadastro</title>
 </head>
 
@@ -23,8 +24,8 @@
                 </div>
                 <div class="container-fluid justify-content-end">
                     <li class="li-menu">
-                        <a class="a-menu" href="">Senac Goias</a>
-                        <a class="a-menu" href="">Cursos</a>
+                        <a class="a-menu" href="/index.html">Senac Goias</a>
+                        <a class="a-menu" href="/html/paginaForm.html">Cursos</a>
                         <a class="a-menu" href="">Faculdade</a>
                         <a class="a-menu" href="">Cursos Gratis</a>
                         <a class="a-menu" href="">Educação</a>
@@ -34,29 +35,32 @@
             </nav>
         </div>
     </header>
-    <main class="container">
+    <main class="container-fluid">
+            <h3 class="container mt-4 d-flex bg-primary text-light justify-content-center" style="border-radius: 5px; width: 50%; text-align: center;" >Cadastro Curso</h3>
         <form action="" class="mt-4 row">
 
             <div class="row d-flex flex-column">
-
+                <!-- Nome -->
                 <div class=" col input-group mt-4 mb-4 justify-content-center">
                     <i class="input-group-text fa-solid fa-user"></i>
                     <input type="text" class="form1 border border-primary" placeholder="Nome Completo">
                 </div>
-
+                <!-- Data Nascimento -->
                 <div class="col">
                     <div class="input-group mt-4 mb-4 justify-content-center">
                         <i class="input-group-text fa-solid fa-envelope"></i>
                         <input type="date" class="form1 border border-primary">
                     </div>
                 </div>
-
-                <div class="col d-flex flex-column align-items-center mt-4 mb-4">
+                <!-- Genero -->
+                <div class="col d-flex flex-column align-items-center justify-content-center mt-4 mb-4">
+                    <div class="col pb-5">
+                        <b>Gênero</b>
+                    </div>
                     <div class="form-check justify-content-center">
-                        Gênero <br>
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label" for="flexRadioDefault1">
-                            Homen
+                            Homem
                         </label>
                     </div>
                     <div class="form-check justify-content-center">
@@ -67,15 +71,147 @@
                         </label>
                     </div>
                 </div>
+                <div class="col ">
+                    <!-- CPF -->
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-address-card"></i>
+                        <input type="number" class="form1 border border-primary" placeholder="CPF">
+                    </div>
+                </div>
+                <!-- Endereço -->
+                <div class="col">
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-house"></i>
+                        <input type="text" name="" id="" class="form1 border border-primary" placeholder="Endereço">
+                    </div>
+                </div>
+                <!-- Cidade -->
+                <div class="col">
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-location-crosshairs"></i>
+                        <input type="text" name="" id="" class="form1 border border-primary" placeholder="Cidade">
+                    </div>
+                </div>
+                <!-- Estado -->
+                <div class="col">
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-map"></i>
+                        <!-- <input type="text" name="" id="" class="form1 border border-primary" placeholder="Estado"> -->
+                        <select>
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
 
 
+                    </div>
+                </div>
+                <!-- Cep -->
+                <div class="col">
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-signs-post"></i>
+                        <input type="number" name="" id="" class="form1 border border-primary" placeholder="CEP">
+                    </div>
+                </div>
+                <!-- Telefone -->
+                <div class="col">
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-phone-flip"></i>
+                        <input type="tel" name="" id="" class="form1 border border-primary" placeholder="Telefone">
+                    </div>
+                </div>
+                <!-- E-MAIL -->
+                <div class="col">
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-envelope"></i>
+                        <input type="tel" name="" id="" class="form1 border border-primary" placeholder="E-mail">
+                    </div>
+                </div>
+                <!-- Cursos -->
+                <div class="col">
+                    <div class="input-group mt-4 mb-4 justify-content-center">
+                        <i class="input-group-text fa-solid fa-envelope"></i>
+                        <!-- <input type="tel" name="" id="" class="form1 border border-primary" placeholder="Cursos"> -->
+                        <select id="cursoSelect">
+                            <option value="">Selecione um curso</option>
+                            <option value="Informática Fundamental (Vagas exclusivas para OVG – Tecendo o Futuro)">
+                                Informática Fundamental (Vagas exclusivas para OVG – Tecendo o Futuro)</option>
+                            <option value="Fundamentos de Python I (Vagas exclusivas para alunos da CISCO)">Fundamentos
+                                de Python I (Vagas exclusivas para alunos da CISCO)</option>
+                            <option value="Desenvolvedor WEB Front-End">Desenvolvedor WEB Front-End</option>
+                            <option value="Assistente Administrativo (Vagas exclusivas para OVG – Tecendo o Futuro)">
+                                Assistente Administrativo (Vagas exclusivas para OVG – Tecendo o Futuro)</option>
+                            <option value="Operador de Computador (Vagas exclusivas para OVG – Tecendo o Futuro)">
+                                Operador de Computador (Vagas exclusivas para OVG – Tecendo o Futuro)</option>
+                            <option value="Administrador de Banco de Dados">Administrador de Banco de Dados</option>
+                            <option value="Programador de Sistemas">Programador de Sistemas</option>
+                            <option value="Instalador de Sistemas Eletroeletrônicos e CFTV">Instalador de Sistemas
+                                Eletroeletrônicos e CFTV</option>
+                            <option value="Técnico em Administração">Técnico em Administração</option>
+                            <option value="Técnico em Informática">Técnico em Informática</option>
+                        </select>
+
+                    </div>
+                </div>
 
 
             </div>
+            <div class="col d-flex justify-content-center">
+                <button class="me-5"><a href="/index.html">Volta</a></button>
+                <button class="ms-5"><a href="/index.html">Enviar</a></button>
+            </div>
         </form>
     </main>
+    <footer class=" container-fluid bg-primary">
+        <div id="map" class="d-flex flex-row justify-content-center p-3">
+            <iframe class="me-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d955.7024776627788!2d-49.23647328498325!3d-16.6363066552588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef250d5f74183%3A0x78e6118444fcfc2e!2sFaculdade%20Senac%20Goi%C3%A1s%20-%20Sede!5e0!3m2!1spt-PT!2sbr!4v1685733151876!5m2!1spt-PT!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="flex-column">
+                <form action="">
+                    <div class="input-group mb-4">
+                        <i class="input-group-text fa-solid fa-envelope"></i>
+                        <a style="text-decoration: none; color: white; padding-right: 10px; text-align: center; margin-left: 0px; border: 1px solid white; border-top-right-radius: 10px; border-bottom-right-radius: 10px;" href="mailto:atendimento@go.senac.br">atendimento@go.senac.br</a>
+                    </div>
+                    <div class="input-group mb-4">
+                        <i class="input-group-text fa-solid fa-phone"></i>
+                        <a style="text-decoration: none; color: white; padding-right: 10px; text-align: center; margin-left: 0px; border: 1px solid white; border-top-right-radius: 10px; border-bottom-right-radius: 10px;" href="tel:+55 62 3219-5180">62 3219-5180</a>
+                    </div>
+                    <div class="input-group">
+                        <i class="input-group-text fa-brands fa-whatsapp"></i>
+                        <a style="text-decoration: none; color: white; padding-right: 10px; text-align: center; margin-left: 0px; border: 1px solid white; border-top-right-radius: 10px; border-bottom-right-radius: 10px;" href="tel:+55 62 3219-5180">+55 62 3219-5180</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/b696377c01.js" crossorigin="anonymous"></script>
+
+
 
 </html>
